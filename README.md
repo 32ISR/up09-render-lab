@@ -11,26 +11,33 @@
 ### Пример одного элемента
 
 ```html
-<li class="track-item">
-    <div class="track-number">1</div>
-    <div class="track-main">
-        <img
-            src="https://i.scdn.co/image/ab67616d000048516f51139efce47d2e01da8052"
-            alt="плохохорошо"
-            class="album-art"
-            loading="lazy"
-        />
-        <div class="track-info">
-            <div class="track-name">плохохорошо</div>
-            <div class="track-artists">iskrit, ioneweb</div>
-            <div class="track-album">плохохорошо</div>
+<div class="item-card">
+    <img
+        src="https://via.placeholder.com/300x200/3498db/ffffff?text=Laptop"
+        alt="Ноутбук Dell XPS 15"
+        class="item-image" />
+    <div class="item-content">
+        <span class="status-badge status-active">Активно</span>
+        <h3 class="item-title">Ноутбук Dell XPS 15</h3>
+        <p class="item-description">
+            Мощный ноутбук для работы и игр. Intel Core i7, 16GB RAM, RTX 3050.
+            Состояние отличное.
+        </p>
+        <div class="item-footer">
+            <div>
+                <div class="item-price">65 000 ₽</div>
+                <div class="bid-info">
+                    Текущая ставка: 70 000 ₽
+                    <span class="bid-count">5</span>
+                </div>
+            </div>
+            <div class="item-meta">
+                <span class="item-seller">Продавец: techseller</span>
+            </div>
         </div>
     </div>
-    <div class="track-meta">
-        <div class="duration">2:59</div>
-        <div class="popularity">♪ 30</div>
-    </div>
-</li>
+</div>
+
 ```
 
 ### Шаг 1: Получить JSON данные
